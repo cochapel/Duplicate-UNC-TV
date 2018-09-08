@@ -1,12 +1,4 @@
 /* Site Skeleton */
-.row1 {
-  position: fixed;
-  top: 0;
-  background-color: #FFFFFF;
-  height: 75px;
-  width: 100%;
-}
-
 .row2 {
   top: 75px;
   background-color: #1A434F;
@@ -95,19 +87,38 @@
 
 /* On Site Images and Text */
 /* First Row */
+.row1 {
+  position: fixed;
+  top: 0;
+  background-color: #FFFFFF;
+  height: 75px;
+  width: 100%;
+}
+
 .logo {
-  margin: 17px 0 0 85px;
+  margin: 17px 0 0 25px;
   max-height: 39px;
 }
 
 .nav {
   display: flex;
   justify-content: space-around;
-  margin: 25px;
+  margin: 25px 175px 25px 25px;
+}
+
+.mag {
+  width: 18px;
+  margin: 2px 0px 0px 0px;
 }
 
 li {
   display: inline;
+  font-size: 16px;
+  padding: 30px 20px 30px 20px;
+}
+
+.red {
+  color: #9E2026;
 }
 
 /* Second Row */
@@ -148,27 +159,57 @@ h6 {
 
 /* HOVER STATES */
 /* unvisited link */
-li:link {
-    color: #FF0000;
+a:link {
+  text-decoration: none;
+  color: black;
 }
 
 /* visited link */
-li:visited {
-    color: #00FF00;
+a:visited {
+  color: black;
 }
 
 /* mouse over link */
-li:hover {
-    background-color: grey;
+a:hover li {
+  background-color: #F4F4F4;
+  padding: 30px 20px 30px 20px;
+  border: 1px solid #E8E8E8;
 }
 
 /* selected link */
-li:active {
-    color: #0000FF;
+a:active {
 }
 
 /* Media Queries */
-@media(max-width: 1000px) {
-  .row3 {
+@media(max-width: 1024px) {
+  .logo {
+    margin: 17px 45px 0px 0px;
+    max-height: 39px;
+  }
+
+  .six.columns {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .vanish {
+    visibility: hidden;
+  }
+
+  .hamburger {
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    border: 1px solid #3B6F80;
+    padding: 5px;
+    margin: 12px 0px 0px 5px;
+  }
+
+  .hamLine {
+    width: 35px;
+    height: 5px;
+    background-color: #3B6F80;
+    margin: 5px 1.5px 0px 0px;
   }
 }
