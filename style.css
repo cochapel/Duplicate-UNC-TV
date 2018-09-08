@@ -1,43 +1,32 @@
+/* Site Skeleton */
 .row1 {
   position: fixed;
   top: 0;
-  background-color: grey;
+  background-color: #FFFFFF;
   height: 75px;
   width: 100%;
 }
 
 .row2 {
   top: 75px;
-  background-color: lightgrey;
-  height: 60px;
-  margin: 75px 0px -40px 0px;
+  background-color: #1A434F;
+  height: 65px;
+  margin: 75px 0px 30px 0px;
 }
 
-.row3 {
-  background-color: black;
-  height: 575px;
-  margin: 0px 60px 30px 60px;
+.main {
+  max-width: 1320px;
+  margin: 0 auto;
 }
 
-.row4 {
-  height: 160px;
-  margin: 0px 60px 30px 60px;
-}
-
-.row5 {
-  height: 1010px;
-  margin: 0px 60px 30px 60px;
+.marg {
+  margin-bottom: 30px;
 }
 
 .row6 {
-  background-color: black;
+  background-color: lightgrey;
   height: 230px;
   margin: 0px 0px 30px 0px;
-}
-
-.row7 {
-  background-color: lightgrey;
-  height: 120px;
 }
 
 .row8 {
@@ -55,8 +44,17 @@
   height: 415px;
 }
 
+.row11 {
+  height: 275px;
+}
+
+.row12 {
+  background-color: white;
+  height: 80px;
+  margin: 30px 0px 0px 0px;
+}
+
 .col1 {
-  background-color: black;
   height: 160px;
 }
 
@@ -69,8 +67,108 @@
   height: 575px;
 }
 
+.col4 {
+  background-color: black;
+  height: 275px;
+}
+
+.col5 {
+  background-color: black;
+  height: 275px;
+}
+
+.col6 {
+  height: 275px;
+}
+
+.line1 {
+  position: fixed;
+  background-color: #3B6F80;
+  height: 5px;
+  width: 100%;
+}
+
+.line2 {
+  background-color: pink;
+  height: 5px;
+}
+
+/* On Site Images and Text */
+/* First Row */
+.logo {
+  margin: 17px 0 0 85px;
+  max-height: 39px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 25px;
+}
+
+li {
+  display: inline;
+}
+
+/* Second Row */
+.social {
+  text-align: center;
+}
+
+ul img {
+  max-height: 32px;
+  margin: 18px 18px 0px 0px;
+}
+
+/* Third Row */
+.picHead {
+  max-width: 100%;
+}
+
+.mnPhoto {
+  max-width: 100%;
+  margin-top: -7px;
+}
+
+/* Fifth Row */
+.mnPhoto2 {
+  max-width: 47%;
+}
+
+h5 {
+  font-size: 18px;
+  text-align: center;
+}
+
 h6 {
   margin: 10px 0px 60px 0px;
   text-align: center;
   font-style: italic;
+}
+
+/* HOVER STATES */
+/* unvisited link */
+li:link {
+    color: #FF0000;
+}
+
+/* visited link */
+li:visited {
+    color: #00FF00;
+}
+
+/* mouse over link */
+li:hover {
+    background-color: grey;
+}
+
+/* selected link */
+li:active {
+    color: #0000FF;
+}
+
+/* Media Queries */
+@media(max-width: 1000px) {
+  .row3 {
+  }
 }
