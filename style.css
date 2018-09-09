@@ -1,28 +1,8 @@
 /* Site Skeleton */
 .row2 {
-  top: 75px;
   background-color: #1A434F;
   height: 65px;
-  margin: 75px 0px 30px 0px;
-}
-
-.row8 {
-  height: 650px;
-  margin: 0px 60px 30px 60px;
-}
-
-.row9 {
-  background-color: lightgrey;
-  height: 235px;
-}
-
-.row10 {
-  background-color: black;
-  height: 415px;
-}
-
-.row11 {
-  height: 275px;
+  margin: 75px 0px 0px 0px;
 }
 
 .row12 {
@@ -36,30 +16,11 @@
   height: 575px;
 }
 
-.col4 {
-  background-color: black;
-  height: 275px;
-}
-
-.col5 {
-  background-color: black;
-  height: 275px;
-}
-
-.col6 {
-  height: 275px;
-}
-
 .line1 {
   position: fixed;
   background-color: #3B6F80;
   height: 5px;
   width: 100%;
-}
-
-.line2 {
-  background-color: pink;
-  height: 5px;
 }
 
 /* On Site Images and Text */
@@ -182,11 +143,61 @@ h3 {
   margin-bottom: 50px;
 }
 
-.center {
-  margin: 0 auto;
+/* Sixth Row */
+.box {
+    background-color: #F4F4F4;
+    padding: 75px 0px;
 }
 
-/* Sixth Row */
+.border {
+  text-align: center;
+  background-color: white;
+  border: 1px solid black;
+  width: 60px;
+  padding: 7px;
+}
+
+.mnPhoto3 {
+  width: 100%;
+}
+
+.absol {
+  position: absolute;
+  margin-top: 50px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+/* Seventh Row */
+.box2 {
+  background-color: #F4F4F4;
+  padding: 37px 0px;
+}
+
+.absol2 {
+  position: absolute;
+  margin-top: -21px;
+}
+
+/* Eighth Row */
+.line2 {
+  background-color: #3B6F80;
+  height: 5px;
+  width: 100%;
+}
+
+.row11 {
+  background-color: #F4F4F4;
+  height: auto;
+  padding: 35px 35px;
+}
+
+.logo2 {
+  width: 200px;
+}
 
 /* HOVER STATES */
 /* unvisited link */
