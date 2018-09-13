@@ -4,12 +4,14 @@
     <title> Home - UNC-TV Public Media North Carolina</title>
 
     <link rel="stylesheet" type="text/css" href=" https://necolas.github.io/normalize.css/8.0.0/normalize.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" type="text/css" href="skeleton.css">
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
   <body>
+<!-- Row 1 -->
     <div class="row row1">
+      <!-- Hamburger Icon -->
       <a href="#">
         <div class="hamburger">
           <div class="hamLine"></div>
@@ -18,12 +20,14 @@
         </div>
       </a>
 
-      <div class="six columns">
+      <!-- Site Logo -->
+      <div class="six columns moveLogo">
         <a href="#">
           <img class="logo" src="images/logo.png" alt="Logo" />
         </a>
       </div>
 
+      <!-- Header Navigation -->
       <div class="vanish">
         <div class="six columns">
           <nav>
@@ -34,7 +38,7 @@
               <a href="#"><li>About</li></a>
               <a href="#"><li>Support</li></a>
               <a href="#"><li class="red">DONATE</li></a>
-              <a href="#"><li><img class="mag" src="images/mag.png" alt="Magnifying Glass"/></li></a>
+              <a href="#"><li><img class="iconSize" src="images/mag.png" alt="Magnifying Glass"/></li></a>
             </ul>
           </nav>
         </div>
@@ -45,26 +49,32 @@
 
 <!-- Row 2 -->
     <div class="row row2">
+      <!-- Social Media Row -->
       <ul class="social">
-        <img src="images/facebook.jpg" alt="facebook"/>
-        <img src="images/twitter.jpg" alt="twitter"/>
-        <img src="images/instagram.jpg" alt="instagram"/>
-        <img src="images/youtube.jpg" alt="youtube"/>
-        <img src="images/email.jpg" alt="email"/>
+        <a href="#"><img src="images/facebook.jpg" alt="facebook"/></a>
+        <a href="#"><img src="images/twitter.jpg" alt="twitter"/></a>
+        <a href="#"><img src="images/instagram.jpg" alt="instagram"/></a>
+        <a href="#"><img src="images/youtube.jpg" alt="youtube"/></a>
+        <a href="#"><img src="images/email.jpg" alt="email"/></a>
       </ul>
     </div>
 
 <!-- Row 3 -->
     <div class="main">
-      <div class="row marg">
-          <img class="picHead" src="images/pictureHead.jpg" alt="Picture Head"/>
-          <img class="mnPhoto" src="images/mainPhoto.jpg" alt="Main Photo for Slider"/>
+      <div class="row margTop margBtm">
+        <img class="picHeader" src="images/pictureHead.jpg" alt="Picture Header"/>
+        <img class="mnPhoto" src="images/mainPhoto.jpg" alt="Main Photo for Slider"/>
+        <div class="captPos">
+          <a href="#"><p class="captBold1">The Great American Read</p></a>
+          <p class="captReg">Watch the Fall Kickoff of The Great American Read, Tuesday, 9/11, at 8 PM, on UNC-TV.</p>
+          <a href="#"><p class="captBold2">Learn More ></p></a>
+        </div>
       </div>
 
 <!-- Row 4 -->
-      <div class="row marg main2">
+      <div class="row margBtm main2">
         <div class="three columns marg2">
-          <a href="#"><img class="mnPhoto adjust" src="images/schedule.jpg" alt="View Schedule Photo"/></a>
+          <a href="#"><img class="mnPhoto" src="images/schedule.jpg" alt="View Schedule Photo"/></a>
         </div>
         <div class="three columns marg2">
           <a href="#"><img class="mnPhoto" src="images/online.jpg" alt="Watch Online Photo"/></a>
@@ -78,75 +88,83 @@
       </div>
 
 <!-- Row 5 -->
-      <div class="row marg">
-        <div class="eight columns">
+      <div class="row margBtm">
+        <div class="eight columns twlv">
           <div class="row row6">
-            <div class="seven columns">
+            <div class="seven columns twlv">
               <a href="#"><img class="mnPhoto2" src="images/centerPiece.jpg" alt="CenterPiece Photo"/></a>
             </div>
             <div class="five columns marg5Row">
-              <h1 class="textPos">CenterPiece</h1>
-              <p class="marg5Row2 textPos">Read the monthly program guide for our four channels.</p>
-              <a href="#">
-                <div class="textPos btn">
-                  <h2>Learn More ></h2>
-                </div>
-              </a>
+              <div class="textPos">
+                <h1 class="textBold">CenterPiece</h1>
+                <p class="marg5Row2 textReg">Read the monthly program guide for our four channels.</p>
+                <a href="#">
+                  <div class="btn">
+                    <h2>Learn More ></h2>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
 
           <div class="row row6">
-            <div class="seven columns">
+            <div class="seven columns twlv">
               <a href="#"><img class="mnPhoto2" src="images/eGuide.jpg" alt="eGuide Photo"/></a>
             </div>
             <div class="five columns marg5Row">
-              <h1 class="textPos">eGuide</h1>
-              <p class="marg5Row2 textPos">Get the latest information about upcoming programs and events.</p>
-              <a href="#">
-                <div class="textPos btn">
-                  <h2>Learn More ></h2>
-                </div>
-              </a>
+              <div class="textPos">
+                <h1 class="textBold">eGuide</h1>
+                <p class="marg5Row2 textReg">Get the latest information about upcoming programs and events.</p>
+                <a href="#">
+                  <div class="btn">
+                    <h2>Learn More ></h2>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
 
           <div class="row row6">
-            <div class="seven columns">
+            <div class="seven columns twlv">
               <a href="#"><img class="mnPhoto2" src="images/channel.jpg" alt="Channel Information Photo"/></a>
             </div>
             <div class="five columns marg5Row">
-              <h1 class="textPos">Channel Information</h1>
-              <p class="marg5Row2 textPos">Find where you can tune in to watch each of our four channels.</p>
-              <a href="#">
-                <div class="textPos btn">
-                  <h2>Learn More ></h2>
-                </div>
-              </a>
+              <div class="textPos">
+                <h1 class="textBold">Channel Information</h1>
+                <p class="marg5Row2 textReg">Find where you can tune in to watch each of our four channels.</p>
+                <a href="#">
+                  <div class="btn">
+                    <h2>Learn More ></h2>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
 
           <div class="row row6">
-            <div class="seven columns">
+            <div class="seven columns twlv">
               <a href="#"><img class="mnPhoto2" src="images/location.jpg" alt="Location Photo"/></a>
             </div>
             <div class="five columns marg5Row">
-              <h1 class="textPos">On Location</h1>
-              <p class="marg5Row2 textPos">See where we're headed to film this week.</p>
-              <a href="#">
-                <div class="textPos btn">
-                  <h2>Learn More ></h2>
-                </div>
-              </a>
+              <div class="textPos">
+                <h1 class="textBold">On Location</h1>
+                <p class="marg5Row2 textReg">See where we're headed to film this week.</p>
+                <a href="#">
+                  <div class="btn">
+                    <h2>Learn More ></h2>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="four columns main3">
           <h6 class="marg3">Our Advertisers and Supporters</h6>
-          <div class="row marg">
+          <div class="row margBtm">
             <a href="#"><img src="images/sponsor1.png" alt="Sponsor Image" /></a>
           </div>
-          <div class="row marg">
+          <div class="row margBtm">
             <a href="#"><img src="images/sponsor2.jpg" alt="Sponsor Image" /></a>
           </div>
           <div class="row">
@@ -156,40 +174,41 @@
       </div>
 
 <!-- Row 6 -->
-      <div class="row marg">
-        <div class="eight columns box">
+      <div class="row margBtm2">
+        <div class="eight columns box margBtm3">
           <img class="mnPhoto3" src="images/readerOfWeek.png" alt="Reader Of The Week Image"/>
           <div class="center">
             <div class="absol">
-              <div class="border">Arts</div>
+              <div class="textReg border">ARTS</div>
             </div>
           </div>
         </div>
 
-        <div class="four columns">
-          <p>Reader of the Week: Christina Rush</p>
-          <p>by Rebekah Radisch • July 10 2018</p>
-          <p>We're celebrating The Great American Read—and North Carolina's most avid readers—all
+        <div class="four columns twlv">
+          <a href="#"><p class="textReg headln">Reader of the Week: Christina Rush</p></a>
+          <p class="textReg author">by <span class="athr">Rebekah Radisch</span> • July 10 2018</p>
+          <ul class="social2">
+            <li>
+              <a href="#"><img class="imgBorder" src="images/facebook.svg" alt="Facbook Link" /></a></li>
+            <li>
+              <a href="#"><img class="imgBorder" src="images/twitter.svg" alt="Facbook Link" /></a></li>
+            <li>
+              <a href="#"><img class="imgBorder" src="images/google.svg" alt="Facbook Link" /></a></li>
+            <li>
+              <a href="#"><img class="imgBorder" src="images/mail.svg" alt="Facbook Link" /></a></li>
+          </ul>
+          <p class="textReg para">We're celebrating The Great American Read—and North Carolina's most avid readers—all
             summer long! See if you have what it takes to be our Reader of the Week!</p>
-          <p>See More ></p>
+          <a href="#"><p class="textBold more">SEE MORE ></p></a>
 
-          <a href="#">
-            <div class="btn">
-              <h2>CHRISTINA RUSH</h2>
-            </div>
-          </a>
-
-          <a href="#">
-            <div class="btn">
-              <h2>ARTS</h2>
-            </div>
-          </a>
-
-          <a href="#">
-            <div class="btn">
-              <h2>NC BOOKWATCH</h2>
-            </div>
-          </a>
+          <ul class="tags">
+            <li class="tag">
+              <a href="#"><span class="tagOpt">CHRISTINA RUSH</span></a></li>
+            <li class="tag">
+              <a href="#"><span class="tagOpt">ARTS</span></a></li>
+            <li class="tag">
+              <a href="#"><span class="tagOpt">NC BOOKWATCH</span></a></li>
+          </ul>
         </div>
       </div>
 
