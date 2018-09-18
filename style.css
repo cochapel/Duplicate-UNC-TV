@@ -1,4 +1,3 @@
-/* Site Skeleton */
 /* Fonts */
 @font-face {
     font-family: OpenSans;
@@ -10,26 +9,6 @@
     src: url(fonts/OpenSans-Bold.ttf);
 }
 
-.row2 {
-  background-color: #1A434F;
-  height: 65px;
-  margin: 75px 0px 0px 0px;
-}
-
-.row12 {
-  background-color: white;
-  height: 80px;
-  margin: 30px 0px 0px 0px;
-}
-
-.col3 {
-  background-color: lightgrey;
-  height: 575px;
-}
-
-
-
-/* On Site Images and Text */
 /* Row 1 */
 .row1 {
   position: fixed;
@@ -51,6 +30,13 @@
   margin: 25px 175px 25px 25px;
 }
 
+li {
+  display: inline;
+  font-size: 16px;
+  font-family: OpenSans;
+  padding: 30px 20px 30px 20px;
+}
+
 .red {
   color: #9E2026;
 }
@@ -58,13 +44,6 @@
 .iconSize {
   width: 18px;
   margin: 2px 0px 0px 2px;
-}
-
-li {
-  display: inline;
-  font-size: 16px;
-  font-family: OpenSans;
-  padding: 30px 20px 30px 20px;
 }
 
 /* Psuedoclasses */
@@ -86,10 +65,6 @@ a:hover li {
   border: 1px solid #E8E8E8;
 }
 
-/* selected link */
-a:active {
-}
-
 
 .line1 {
   position: fixed;
@@ -99,7 +74,15 @@ a:active {
   z-index: 1;
 }
 
+
+
 /* Row 2 */
+.row2 {
+  background-color: #1A434F;
+  height: 65px;
+  margin: 75px 0px 0px 0px;
+}
+
 .social {
   text-align: center;
 }
@@ -112,7 +95,6 @@ ul img {
 
 
 /* Row 3 */
-/* Main begins here... */
 .main {
   max-width: 1320px;
   margin: 0 auto;
@@ -133,6 +115,21 @@ ul img {
 .mnPhoto {
   max-width: 100%;
   margin-top: -7px;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 400px;
+  padding: 16px;
+  font-size: 50px;
+}
+
+.next {
+  right: 65px;
+}
+
+.arrColor {
+  color: white;
 }
 
 .captPos {
@@ -158,6 +155,8 @@ ul img {
   font-size: 1.2vw;
   text-align: right;
 }
+
+
 
 /* Row 5 */
 .row6 {
@@ -216,18 +215,20 @@ h2 {
   margin-bottom: 30px;
 }
 
+
+
 /* Row 6 */
 .margBtm2 {
   margin-bottom: 30px;
 }
 
-.margBtm3 {
-  margin-bottom: 60px;
-}
-
 .box {
     background-color: #E0E0E0;
     padding: 70px 0px;
+}
+
+.margBtm3 {
+  margin-bottom: 60px;
 }
 
 .mnPhoto3 {
@@ -259,8 +260,16 @@ h2 {
   color: #6A6A6A;
 }
 
+.textReg.headln:hover {
+  text-decoration: underline;
+}
+
 .textReg.author {
   font-size: 1.3rem;
+}
+
+.athr {
+  font-family: OpenSans_Bld;
 }
 
 .social2 {
@@ -274,14 +283,6 @@ h2 {
   max-height: 15px;
   border: 1px solid #F4F4F4;
   padding: 8px 10px 8px 10px;
-}
-
-.athr {
-  font-family: OpenSans_Bld;
-}
-
-.textReg.headln:hover {
-  text-decoration: underline;
 }
 
 .textReg.para {
@@ -325,9 +326,11 @@ li.tag:hover {
   color: white;
 }
 
-/* Seventh Row */
+
+
+/* Row 7 */
 .box2 {
-  background-color: #F4F4F4;
+  background-color: #E0E0E0;
   padding: 37px 0px;
 }
 
@@ -336,7 +339,7 @@ li.tag:hover {
   margin-top: -21px;
 }
 
-/* Eighth Row */
+/* Row 8 and on... */
 .line2 {
   background-color: #3B6F80;
   height: 5px;
@@ -353,6 +356,33 @@ li.tag:hover {
   width: 200px;
 }
 
+.footSize {
+  font-size: 1.4rem;
+  color: #4B4B4B;
+}
+
+.footSizeBold {
+  font-size: 1.4rem;
+  color: #4B4B4B;
+}
+
+.footSize2 {
+  font-size: 1.4rem;
+}
+
+a.footSize2:visited {
+  color: #3B6F80;
+}
+
+a.footSize2:hover {
+  text-decoration: underline;
+}
+
+.center2 {
+  text-align: center;
+  margin-top: 10px;
+}
+
 /* Hover States */
 /* mouse over link */
 a:hover .btn {
@@ -366,19 +396,8 @@ a:hover h2 {
 }
 
 /* Media Queries */
-/* Row 1 */
 @media(max-width: 1024px) {
-  .moveLogo {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    max-height: 39px;
-  }
-
-  .vanish {
-    visibility: hidden;
-  }
-
+  /* Row 1 */
   .hamburger {
     position: absolute;
     height: 35px;
@@ -394,11 +413,26 @@ a:hover h2 {
     background-color: #3B6F80;
     margin: 5px 1.5px 0px 0px;
   }
+
+  .moveLogo {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    max-height: 39px;
+  }
+
+  .vanish {
+    visibility: hidden;
+  }
 }
 
 /* Media Queries */
 @media(max-width: 960px) {
 /* Row 3 */
+  .disappear {
+    visibility: hidden;
+  }
+
   .captPos {
     position: static;
     padding: 0px 15px;
@@ -438,12 +472,12 @@ a:hover h2 {
   }
 
 /* Row 5 */
+.eight.columns.twlv {
+  width: 100%;
+}
+
   .row6 {
     height: auto;
-  }
-
-  .eight.columns.twlv {
-    width: 100%;
   }
 
   .seven.columns.twlv {
